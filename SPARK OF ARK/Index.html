@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Spark of Ark - Web & App Development | AI Solutions | Branding & Marketing</title>
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Spark of Ark - Web & App Development, AI, Branding">
+        <meta name="description"
+            content="Spark of Ark offers Web Development, Mobile Apps, AI & ML Integration, Branding, Logo Design, and Marketing solutions to grow your business.">
+        <meta name="keywords"
+            content="Spark of Ark, web development, mobile app development, AI integration, ML, UI/UX design, cloud DevOps, branding, logo design, digital marketing, SEO, Meta ads, Facebook marketing">
+        <meta name="author" content="Spark of Ark">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.sparkofark.com/">
+        <meta property="og:title" content="Spark of Ark - Web & App Development | AI & Branding Solutions">
+        <meta property="og:description"
+            content="Grow your digital presence with Spark of Ark. Experts in web and mobile development, AI, design, branding, and marketing.">
+        <meta property="og:image" content="https://www.sparkofark.com/images/preview.jpg">
+        <!-- Update this to your actual OG image -->
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://www.sparkofark.com/">
+        <meta property="twitter:title" content="Spark of Ark - Web & App Development | AI & Branding Solutions">
+        <meta property="twitter:description"
+            content="Websites, apps, AI, design, and marketing — Spark of Ark helps businesses scale and innovate.">
+        <meta property="twitter:image" content="https://www.sparkofark.com/images/preview.jpg"> 
+
+        <!-- Favicon -->
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <!-- Theme Color -->
+        <meta name="theme-color" content="#00bcd4">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- AOS Animation CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+        <link rel="stylesheet" href="indexcss.css">
+
+    </head>
+
+    <!-- Navbar section -->
+    <!-- Navbar section -->
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo">
+                <img src="logo.png" alt="Spark of Ark Logo">
+            </div>
+            <h1>SPARK OF ARK</h1>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#whatwedo">What We Do</a>
+                <ul class="dropdown">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">App Development</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">UI/UX Designing</a></li>
+                    <li><a href="#">Logo Designing</a></li>
+                    <li><a href="#">Branding & Market Strategy</a></li>
+                    <li><a href="#">AI-ML Integration </a></li>
+                </ul>
+            </li>
+            <li><a href="#whatwethink">What We Think</a></li>
+            <li><a href="#about-spark">About Spark</a>
+                <ul class="dropdown">
+                    <li><a href="our story.html">Our Story</a></li>
+                </ul>
+            </li>
+            <li><a href="#contactus.html">Contact Us</a></li>
+            <li>
+                <div class="language-selector">🌐 EN ▼</div>
+            </li>
+        </ul>
+
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <div class="container">
+        <div class="content">
+            <h1>Simply</h1>
+            <h1>Exceptional</h1>
+            <h1><span class="highlight">Web Solutions</span></h1>
+            <p>Providing expert services in Web Designing, Logo Designing, App Development, Digital Marketing, SEO
+                Services,
+                and Branding Solutions to boost your business success.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+        <div class="graphic">
+            <img src="jhblzbv.png" alt="Artistic Design">
+        </div>
+    </div>
+
+
+    <!-- Cookie Popup -->
+    <div id="cookie-popup" style="display: none;">
+        <div class="cookie-container">
+            <h2>We use cookies to give you the best possible experience on our website.</h2>
+            <p>When you visit any website, it may store or retrieve information on your browser, mostly in the form of
+                cookies...</p>
+            <div class="cookie-buttons">
+                <button id="customize-btn">Customize cookies</button>
+                <button id="accept-btn">Accept all cookies</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Dropdown toggle on mobile
+            document.querySelectorAll('.nav-links > li > a').forEach(item => {
+                item.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        const parentLi = item.parentElement;
+                        if (parentLi.querySelector('.dropdown')) {
+                            e.preventDefault();
+                            parentLi.classList.toggle('active-dropdown');
+                        }
+                    }
+                });
+            });
+
+            // Cookie popup
+            if (!localStorage.getItem('cookiesAccepted')) {
+                document.getElementById('cookie-popup').style.display = 'flex';
+            }
+
+            document.getElementById('accept-btn').onclick = function () {
+                localStorage.setItem('cookiesAccepted', 'true');
+                document.getElementById('cookie-popup').style.display = 'none';
+            };
+
+            document.getElementById('customize-btn').onclick = function () {
+                alert('Customize cookies settings coming soon!');
+            };
+        });
+    </script>
+
+
+
+
+    <!-- What We Think Section Start -->
+    <section class="what-we-think-section" id="whatwethink">
+        <div class="background-wrapper">
+            <header class="header2">
+                <h1 data-aos="fade-down">What We Think</h1>
+                <p data-aos="fade-up">Ideas, Insights & Innovation from the Team at Spark of Ark</p>
+            </header>
+
+            <div class="comt3">
+                <div class="blog-card" data-aos="fade-up">
+                    <div class="blog-image">
+                        <img src="AI in web development.png" alt="AI in Web Development" />
+                    </div>
+                    <div class="blog-content">
+                        <h3>The Future of AI in Web Development</h3>
+                        <p>Explore how AI is shaping the next generation of websites through automation,
+                            personalization, and
+                            intelligent UX.</p>
+                        <a href="whatwethinkpost1.html" class="read-more" target="_blank">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60"
+                            alt="Brand Strategy" />
+                    </div>
+                    <div class="blog-content">
+                        <h3>Building Brands that Connect</h3>
+                        <p>Discover our take on creating emotionally resonant brands that drive user loyalty and stand
+                            out in
+                            digital noise.</p>
+                        <a href="whatwethinkpost2.html" class="read-more" target="_blank">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="5ux tips to improve.png" alt="User Experience" />
+                    </div>
+                    <div class="blog-content">
+                        <h3>5 UX Tips to Elevate Your Product</h3>
+                        <p>Our top design principles for crafting smooth, user-centered experiences that turn clicks
+                            into
+                            conversions.</p>
+                        <a href="whatwethinkpost3.html" class="read-more" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- What We Think Section End -->
+
+
+    <!-- About our story section -->
+    <section class="aboutsection551" id="about-spark">
+        <div class="abouttext551" id="aboutText551">
+            <h2 class="aboutheader551">About Our Story</h2>
+            <p class="aboutpara551">
+                Our journey began as a humble web development agency, driven by a vision to create captivating online
+                experiences. Over the years, fuelled by innovation and an unwavering commitment to excellence, we have
+                evolved
+                into a dynamic Web Development and Software Company that serves clients across the global market.
+            </p>
+            <p class="aboutpara551">
+                Digital Kangaroos is more than just a web development and software company. We're your strategic partner
+                in
+                navigating the ever-evolving landscape of technology. With a passion for innovation and a commitment to
+                excellence, we provide cutting-edge solutions that empower businesses to thrive in the digital age.
+            </p>
+            <p class="aboutpara551">
+                Our team constantly explores new technological frontiers, integrating the latest tools and best
+                practices to
+                help clients scale effectively and efficiently. Through collaboration and a client-first approach, we
+                transform
+                visions into impactful digital products.
+            </p>
+            <a href="our story.html" class="aboutbtn551">Learn More →</a>
+        </div>
+        <div class="aboutimgslider551">
+            <img id="sliderImg551" src="about section side iamge.png" alt="Team working at office" />
+        </div>
+    </section>
+
+    <script>
+        const images551 = ["about section side iamge.png", "about section image 2.png"];
+        let currentIndex551 = 0;
+        const imgElement = document.getElementById("sliderImg551");
+
+        setInterval(() => {
+            currentIndex551 = (currentIndex551 + 1) % images551.length;
+            imgElement.style.opacity = 0;
+            setTimeout(() => {
+                imgElement.src = images551[currentIndex551];
+                imgElement.style.opacity = 1;
+            }, 300);
+        }, 3000);
+
+        // Scroll animation logic
+        const aboutText = document.getElementById("aboutText551");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    aboutText.classList.add("animate");
+                    observer.disconnect(); // Run only once
+                }
+            });
+        }, {
+            threshold: 0.10
+        });
+
+        observer.observe(aboutText);
+    </script>
+
+
+
+
+    <!-- What we do section -->
+    <!-- Header Section -->
+    <section class="header841" data-aos="fade-down" id="whatwedo">
+        <h1>What We Do</h1>
+        <p>We help businesses grow through digital innovation, creative design, and cutting-edge technology.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section841">
+        <div class="card841" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Custom websites built with performance, SEO, and scalability in mind.</p>
+        </div>
+        <div class="card841" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile App Development</h3>
+            <p>iOS & Android apps that deliver seamless user experiences and high performance.</p>
+        </div>
+        <div class="card841" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-pencil-ruler"></i>
+            <h3>UI/UX Design</h3>
+            <p>Human-centered design that boosts usability, engagement, and retention.</p>
+        </div>
+        <div class="card841" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-brain"></i>
+            <h3>AI & ML Integration</h3>
+            <p>Leverage artificial intelligence for automation, predictions, and intelligent features.</p>
+        </div>
+        <div class="card841" data-aos="fade-up" data-aos-delay="500">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Branding & Strategy</h3>
+            <p>Create memorable brand identities and strategies that resonate with your audience.</p>
+        </div>
+        <div class="card841" data-aos="fade-up" data-aos-delay="600">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud & DevOps</h3>
+            <p>Secure, scalable, and automated infrastructure built for growth.</p>
+        </div>
+        <div class="card841" data-aos="fade-up" data-aos-delay="700">
+            <i class="fas fa-pen-nib"></i>
+            <h3>Logo Designing</h3>
+            <p>Create visually stunning and memorable logos that define your brand identity.</p>
+        </div>
+        <div class="card841" data-aos="fade-up" data-aos-delay="800">
+            <i class="fab fa-facebook"></i>
+            <h3>Meta Ads & Marketing</h3>
+            <p>Boost your reach and conversions with targeted Meta (Facebook & Instagram) ad campaigns.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section841" data-aos="fade-up">
+        <h2>Why Choose Spark of Ark?</h2>
+        <div class="why-points841">
+            <div class="point841">Expert Engineers</div>
+            <div class="point841">Fast Turnaround</div>
+            <div class="point841">Client-First Approach</div>
+            <div class="point841">Affordable & Scalable</div>
+        </div>
+    </section>
+
+    <!-- AOS JS for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+
+
+    <!-- loaction section final -->
+    <section class="section441">
+
+        <h2>
+            Our Office in <span class="highlight441">Lucknow</span>
+        </h2>
+        <p>
+            Visit us at Gomti Nagar , New Lucknow ,U.P. India — blending tradition with innovation in the heart of the
+            city
+            of Nawabs.
+        </p>
+        <div class="contact441">
+            📞 <a href="tel:+916307339953" style="color: #a5f3fc; text-decoration: none;">+91 9XXXX94245</a>
+        </div>
+        <a href="https://maps.app.goo.gl/jiyoaPrN4CnUJZidA" class="button441" target="_blank">Get Direction</a>
+        <div class="image-container441">
+            <img src="newlkoskyline.png" alt="Lucknow Skyline">
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta2">
+        <h2>Let’s Build Something Great Together</h2>
+        <a href="contactus.html">Get in Touch</a>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Left Side -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="cropped_image.png" alt="Spark of Ark Logo">
+                    <h2>Spark of ARK</h2>
+                </div>
+                <p>Toll Free Number: 1800-XXX-XXXX</p>
+                <p>Working Hours: 9:00 AM - 6:00 PM</p>
+            </div>
+
+            <!-- Center -->
+            <div class="footer-center">
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="update-time">Last Updated: 28-APR-2025 | 11:00 AM</p>
+            </div>
+
+            <!-- Right Side -->
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <p>© 2025 Spark of ARK. All Rights Reserved.</p>
+            <p>1,000+ users have visited Spark of Ark since inception.</p>
+        </div>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top" onclick="scrollToTop()">
+            <span>↑</span>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Script -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story - SPARK OF ARK</title>
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #eef3f8;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #002244;
+    }
+
+    .subheading {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #004e89;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+
+    .item {
+      position: relative;
+      width: 50%;
+      box-sizing: border-box;
+      padding: 20px 30px;
+    }
+
+    .item.left {
+      left: 0;
+      text-align: right;
+    }
+
+    .item.right {
+      left: 50%;
+      text-align: left;
+    }
+
+    .item-content {
+      background: #fff;
+      padding: 20px 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      display: inline-block;
+      max-width: 500px;
+    }
+
+    .item-content h3 {
+      margin-top: 0;
+      color: #004e89;
+      font-weight: bold;
+    }
+
+    .item-content p {
+      margin: 10px 0 0;
+      line-height: 1.6;
+    }
+
+    .item.left::before,
+    .item.right::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .item.left::before {
+      right: -18px;
+    }
+
+    .item.right::before {
+      left: -18px;
+    }
+
+    .idea::before {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/1006/1006771.png');
+    }
+
+    .founded::before {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/3448/3448334.png');
+    }
+
+    .analysis::before {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/2913/2913469.png');
+    }
+
+    .client::before {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/3177/3177361.png');
+    }
+
+    .office::before {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/1010/1010066.png');
+    }
+
+    .rebrand::before {
+      background-image: url('https://cdn-icons-png.flaticon.com/512/4359/4359601.png');
+    }
+
+    a.back {
+      display: block;
+      margin-top: 30px;
+      text-align: center;
+      color: #004e89;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .line {
+        left: 10px;
+      }
+
+      .item {
+        width: 100%;
+        padding-left: 50px;
+        text-align: left !important;
+      }
+
+      .item.left,
+      .item.right {
+        left: 0;
+      }
+
+      .item.left::before,
+      .item.right::before {
+        left: 10px;
+        right: auto;
+      }
+
+      .item-content {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="heading">Our Story</h2>
+    <p class="subheading">
+      From a spark to a movement — SPARK OF ARK was born from a simple yet powerful idea: to light the way for bold thinkers, creators, and dreamers.
+    </p>
+
+    <div class="timeline">
+      <div class="line"></div>
+
+      <div class="item left idea" data-aos="fade-right">
+        <div class="item-content">
+          <h3>The Spark of an Idea</h3>
+          <p>In early 2022, we saw a gap between businesses and the digital solutions they needed. A late-night chat sparked a mission: to simplify tech for everyone.</p>
+        </div>
+      </div>
+
+      <div class="item right founded" data-aos="fade-left">
+        <div class="item-content">
+          <h3>Founded - 2022</h3>
+          <p>SPARK OF ARK officially came to life in 2022 with passion, grit, and a simple desk—turning a dream into a registered entity with big ambitions.</p>
+        </div>
+      </div>
+
+      <div class="item left analysis" data-aos="fade-right">
+        <div class="item-content">
+          <h3>Market Analysis & Registration</h3>
+          <p>We did our homework—understanding pain points, trends, and tech gaps. With research and planning, we registered the company and defined our niche.</p>
+        </div>
+      </div>
+
+      <div class="item right client" data-aos="fade-left">
+        <div class="item-content">
+          <h3>First Client</h3>
+          <p>Our first client was a milestone. More than a project, it was proof that our ideas worked—and that we were ready for real-world impact.</p>
+        </div>
+      </div>
+
+      <div class="item left office" data-aos="fade-right">
+        <div class="item-content">
+          <h3>Expanding Our Office</h3>
+          <p>From a room to a real office space. As our team and vision grew, so did our workplace—now a hub for creativity and collaboration.</p>
+        </div>
+      </div>
+
+      <div class="item right rebrand" data-aos="fade-left">
+        <div class="item-content">
+          <h3>Rebranding with a New Name</h3>
+          <p>To reflect our evolving mission, we rebranded to <strong>SPARK OF ARK</strong>—a name that captures our role as igniters of innovation and digital transformation.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="Index.html" class="back">← Back to About us</a>
+  </div>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
